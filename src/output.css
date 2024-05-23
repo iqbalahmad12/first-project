@@ -872,7 +872,7 @@ video {
 }
 
 .bg-hero-pattern {
-  background-image: url('../src/img/background3.jpg');
+  background-image: url('./../src/img/background3.jpg');
 }
 
 .bg-cover {
