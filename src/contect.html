@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="text-gray-600 body-font bg-contact-hero h-screen bg-cover bg-center">
+        <nav class="  dark:border-gray-700 sm:px-4 py-2.5 rounded px-14 ">
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+                <a href="/" class="flex items-center">
+                    <span class="self-center text-3xl font-semibold whitespace-nowrap ">
+                        EARTH
+                    </span>
+                </a>
+
+                <div class="flex items-center">
+                    <button id="menu-toggle" type="button"
+                        class="inline-flex items-center p-2 ml-3 text-sm  rounded-lg  focus:outline-none focus:ring-2    md:hidden">
+                        <span class="sr-only">Open main menu</span>
+                        <!-- Hamburger icon -->
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="w-full md:block md:w-auto hidden" id="mobile-menu">
+                    <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                        <li>
+                            <a href="index.html"
+                                class="block py-2 pr-4 pl-3  rounded md:bg-transparent  md:p-0 dark:text-white"
+                                aria-current="page">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="service.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                                Services
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contect.html"
+                                class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+
+        <div class="container  mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2  flex justify-center mt-16 flex-col md:items-centert text-6xl font-semibold font-sans tracking-widest  md:text-left mb-8 md:mb-0 items-center text-lime-900 text-center">
+                <h1 class="">CONTACT US</h1>
+                <!-- <h3 class="text-4xl pt-4 tracking-widest text-lime-700 px-24">ENDLESS POTENTIAL</h3> -->
+                <!-- <button
+                    class="inline-flex text-white bg-lime-700 border-0 py-2 px-14 mt-10 focus:outline-none hover:bg-green-800 rounded text-lg">EXPLORE</button> -->
+
+
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+    <section class="text-gray-600 body-font ">
+        <div class="md:flex justify-between">
+
+            <h2 class="text-gray-900 text-3xl ml-10 mb-1 mt-20 font-bold title-font">Get In Touch</h2>
+            <div class="lg:w-1/2 px-6  mt-20">
+                <h2 class="title-font font-extrabold text-gray-900 tracking-widest  text-3xl">Talk To Us</h2>
+
+            </div>
+        </div>
+
+        <div class="container px-5  mx-auto flex sm:flex-nowrap flex-wrap">
+            <div
+                class="lg:w-1/2 md:w-1/2 bg-white shadow p-10 mx-8 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+
+
+                <div class="relative mb-4">
+                    <input type="text" id="name" name="name" placeholder="name"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+
+                    <input type="email" id="email" name="email" placeholder="email"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+
+                    <input type="text" id="name" name="name" placeholder="phone"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+
+                    <textarea id="message" name="message" placeholder="message"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                </div>
+                <button
+                    class="text-white flex justify-start bg-lime-600 border-0 mr-auto py-2 px-14 focus:outline-none hover:bg-lime-900 rounded text-lg">SEND
+                    NOW
+                </button>
+
+            </div>
+            <!-- <button
+                class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button> -->
+            <div class="lg:w-2/3 md:w-1/2 bg-white rounded-lg overflow-hidden sm:mr-10">
+
+
+
+
+
+
+                <div class="flex flex-col">
+                    <div class="lg:w-1/2 px-6 flex lg:mt-10 space-x-4">
+                        <div class="w-10 h-10 flex rounded-full p-2 border  border-black"><img src="img/Message.png"
+                                alt="">
+                        </div>
+                        <div class="">
+                            <h2>EMAIL</h>
+                                <p class="text-xl">something@tyler.com</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 px-6 flex lg:mt-10 space-x-4">
+                        <div class="w-10 h-10 flex rounded-full p-2 border  border-black"><img src="img/phone.png"
+                                alt="">
+                        </div>
+                        <div class="">
+                            <h2>PHONE NUMBER
+                                </h>
+                                <p class="text-xl">202-555-0188</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 px-6 flex lg:mt-10 space-x-4">
+                        <div class="w-12 h-10 flex rounded-full p-2 border  border-black"><img src="img/location.png"
+                                alt="">
+                        </div>
+                        <div class="">
+                            <h2>
+                                ADDRESS</h>
+                                <p class="text-xl">2727 Ocean Road,
+                                    Malibu, CA, 90264</p>
+                        </div>
+                    </div>
+                    <div class="flex mt-2  space-x-6">
+                        <h1 class="flex">Follow Us:</h1>
+                        <div class="w-10 h-10 flex rounded-full p-2 mt-10 border  border-black bg-lime-600"><img
+                                src="img/facebook-circle-fill.png" alt="">
+                        </div>
+                        <div class="w-10 h-10 flex rounded-full p-2 mt-10 border  border-black bg-lime-600"><img
+                                src="img/twitter-line.png" alt="">
+                        </div>
+                        <div class="w-10 h-10 flex rounded-full p-2 mt-10 border  border-black bg-lime-600"><img
+                                class="color-white" src="img/youtube-line.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+        </div>
+    </section>
+    <footer class="text-gray-600 body-font">
+        <div class="bg-gray-100">
+            <div class="container mx-auto py-4 px-5 flex flex-col items-center justify-between sm:flex-row">
+                <div class="text-gray-500 text-sm text-center sm:text-left">
+                    <nav class="md:ml-auto flex flex-wrap mt-4  items-center text-xm justify-center">
+                        <a class="mr-5 hover:text-gray-900">HOME</a>
+                        <a class="mr-5 hover:text-gray-900">ABOUT</a>
+                        <a class="mr-5 hover:text-gray-900">SERVICES</a>
+                        <a class="mr-5 hover:text-gray-900">CONTACT</a>
+                    </nav>
+
+                </div>
+                <div class="text-gray-500 text-sm text-center py-4 sm:text-left">
+                    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+
+                        <span class=" text-2xl">EARTH</span>
+                    </a>
+
+                </div>
+                <div class="text-gray-500 text-sm text-center md:mt-4 sm:text-left">©2022 Earth. All right reserved
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
